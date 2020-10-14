@@ -13,13 +13,63 @@ from torch.utils.data import DataLoader
 from torch.utils import data
 from torchvision import transforms
 
-from generator import GALNet_v2
-from utils import make_dir, load_network, prepare, write_log, denorm, tensor2img
-from metrics import calculate_psnr, calculate_ssim
-from prepare_dataset import Testset
+from generator import MSPL_Generator
+from utils.misc import make_dir, write_log
+from utils.visualize import denorm, tensor2img
 
 
-TEST_BLUR_RANGE = ['k13', 'k15', 'k17', 'k19', 'k21', 'k23', 'k25', 'k27']
+#
+MODEL_DIR = ''
+INPUT_IMG_DIR = ''
+OUTPUT_IMG_DIR = ''
+USE_GPU = True
+
+
+rgb_to_tensor = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+    ]) 
+
+# 1. Set Paths
+make_dir(OUTPUT_IMG_DIR)
+
+# 2. Model Load
+# Set GPU or CPU 
+device = torch.device('cuda') if use_gpu else device = torch.device('cpu')
+netG = generator.MSPL_Generator(3, 3, 128, [4, 4, 4, 4]).to(device)
+netG = nn.DataParallel(netG)
+
+if isinstance(netG, nn.DataParallel):
+    netG = netG.module
+netG.load_state_dict(torch.load(MODEL_DIR), strict=strict)
+netG.eval()
+
+for imgs in os.listdir(INPUT_IMG_DIR):    
+    img_path = os.path.join(INPUT_IMG_DIR, imgs)
+    img_filename = os.path.splitext(os.path.split(img_path)[-1])[0]
+
+    img_pil = Image.open(img_path)
+    img_tensor = rgb_to_tensor(img_pil)
+    img_tensor = torch.unsqueeze(img_tensor, 0)
+    img_tensor = img_tensor.to(device)
+
+    out_list = netG(img_tensor)
+    for i, out_tensor in enumerate(out_list):
+        out_tensor = denorm(out_tensor)
+        out_img = tensor2img(out_tensor)
+        save_filename = os.path.join(OUTPUT_IMG_DIR, '{}_out{}.png'.format(img_filename, i))
+        cv2.imwrite(save_filename, out_img)
+    print("{} is done!".format(img_filename))
+
+
+
+
+
+
+
+
+
+
 
 
 def main(model_dir, data_dir, save_dir, dataset_type='MSPL', dataset_name='CelebA', is_visual=True, use_gpu=True):
@@ -39,8 +89,11 @@ def main(model_dir, data_dir, save_dir, dataset_type='MSPL', dataset_name='Celeb
     # 2. Model Load
     # Set GPU or CPU 
     device = torch.device('cuda') if use_gpu else device = torch.device('cpu')
-    netG = generator.GALNet_v2(3, 3, 128, [4, 4, 4, 4]).to(device)
+    netG = generator.MSPL_Generator(3, 3, 128, [4, 4, 4, 4]).to(device)
     netG = nn.DataParallel(netG)
+    if isinstance(model, nn.DataParallel):
+        model = model.module
+    model.load_state_dict(torch.load(model_dir), strict=strict)
     load_network(netG, model_dir)
     netG.eval()
 
