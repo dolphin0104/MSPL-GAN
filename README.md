@@ -42,6 +42,7 @@ python inference.py
 + Test Restuls on MSPL_Testsets [Google Drive](https://drive.google.com/drive/folders/1mmK7qDhxOOehYCeTNMOTI0RhBj1HUDqx?usp=sharing)
 + Our model achieves the following performance on MSPL_Testsets :
 + PSNR and SSIM values are measured using MATLAB.
+
 | MSPL_Center   | PSNR      | SSIM      |
 | ------------- | --------- | --------- |
 | CelebA        | 28.07     | 0.921     |
@@ -55,16 +56,16 @@ python inference.py
 | FFHQ          | 29.22     | 0.941     |
 
 ## Dataset Agreemetn
-+ Our training and testset are synthesized using CelebA (http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html), CelebAMask-HQ (https://github.com/switchablenorms/CelebAMask-HQ), and FFHQ (https://github.com/NVlabs/ffhq-dataset).
++ Our training and testset are synthesized using CelebA [Link](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html), CelebAMask-HQ [Link](https://github.com/switchablenorms/CelebAMask-HQ), and FFHQ [Link](https://github.com/NVlabs/ffhq-dataset).
 + The dataset is available for non-commercial research purposes only.
 + You agree not to reproduce, duplicate, copy, sell, trade, resell or exploit for any commercial purposes, any portion of the images and any portion of derived data.
 + You agree not to further copy, publish or distribute any portion of the dataset. 
 
 
 ## Related Datasets
-+ CelebA (http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
-+ CelebAMask-HQ (https://github.com/switchablenorms/CelebAMask-HQ)
-+ FFHQ (https://github.com/NVlabs/ffhq-dataset)
++ CelebA [Link](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
++ CelebAMask-HQ [Link](https://github.com/switchablenorms/CelebAMask-HQ)
++ FFHQ [Link](https://github.com/NVlabs/ffhq-dataset)
 
 ## Citations
 
