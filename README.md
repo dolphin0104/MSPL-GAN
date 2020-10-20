@@ -2,6 +2,9 @@
 
 This repository is the Official Pytorch Implementation of [Progressive Semantic Face Deblurring]. 
 
+![MSPL_GAN](/images/mspl_gan.png)
+
+
 ## Requirements
 To install requirements:
 ```setup
