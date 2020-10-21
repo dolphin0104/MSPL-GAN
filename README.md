@@ -77,11 +77,12 @@ python inference.py
 + Our model achieves the following performance on MSPL_Testsets :
 + PSNR and SSIM values are measured using MATLAB.
 
-| MSPL_Center   | PSNR      | SSIM      || MSPL_Random   | PSNR      | SSIM      |
-| ------------- | --------- | --------- || ------------- | --------- | --------- |
-| CelebA        | 28.95     | 0.936     || CelebA        | 28.07     | 0.921     |
-| CelebA-HQ     | 29.80     | 0.945     || CelebA-HQ     | 28.82     | 0.929     |
-| FFHQ          | 29.22     | 0.941     || FFHQ          | 27.36     | 0.908     |
+| MSPL_Center   | PSNR      | SSIM      | MSPL_Random   | PSNR      | SSIM      |
+| ------------- | --------- | --------- | ------------- | --------- | --------- |
+| CelebA        | 28.95     | 0.936     | CelebA        | 28.07     | 0.921     |
+| CelebA-HQ     | 29.80     | 0.945     | CelebA-HQ     | 28.82     | 0.929     |
+| FFHQ          | 29.22     | 0.941     | FFHQ          | 27.36     | 0.908     |
+
 
 ![result1](/images/fig1.png)
 ![result2](/images/fig2.png)
