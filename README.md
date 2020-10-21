@@ -85,8 +85,11 @@ python inference.py
 
 
 ![result1](/images/fig1.png)
+
 ![result2](/images/fig2.png)
+
 ![result3](/images/fig3.png)
+
 ![result4](/images/fig4.png)
 
 ## Dataset Agreement
