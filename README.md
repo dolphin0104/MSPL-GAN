@@ -84,13 +84,10 @@ python inference.py
 | FFHQ          | 29.22     | 0.941     | FFHQ          | 27.36     | 0.908     |
 
 
-![result1](/images/fig1.png)
-
-![result2](/images/fig2.png)
-
+![result1](/images/fig1.PNG)
+![result2](/images/fig2.PNG)
 ![result3](/images/fig3.png)
-
-![result4](/images/fig4.png)
+![result4](/images/fig4.PNG)
 
 ## Dataset Agreement
 + Our training and testset are synthesized using [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html), [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ), and [FFHQ](https://github.com/NVlabs/ffhq-dataset).
