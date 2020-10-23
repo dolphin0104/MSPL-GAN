@@ -13,7 +13,7 @@ from torch.utils.data import DataLoader
 from torch.utils import data
 from torchvision import transforms
 
-from generator import MSPL_Generator
+from model.generator import MSPL_Generator
 from utils.misc import make_dir, write_log
 from utils.visualize import denorm, tensor2img
 
@@ -21,12 +21,10 @@ from utils.visualize import denorm, tensor2img
 MODEL_DIR = ''
 INPUT_IMG_DIR = ''
 OUTPUT_IMG_DIR = ''
-USE_GPU = True # True | False
-
 make_dir(OUTPUT_IMG_DIR)
 
 # 2. Set GPU or CPU 
-device = torch.device('cuda') if USE_GPU else device = torch.device('cpu')
+device = torch.device('cuda') # if USE_GPU else device = torch.device('cpu')
 
 # 2. Model Load
 netG = MSPL_Generator(3, 3, 128, [4, 4, 4, 4]).to(device)
