@@ -4,14 +4,14 @@ This repository is the Official Pytorch Implementation of [Progressive Semantic 
 
 ![MSPL_GAN](/images/mspl_gan.png)
 
-## Requirements
+## 1. Requirements
 To install requirements:
 ```setup
 pip install -r requirements.txt
 ```
 
-## Train & Test
-### Preapre dataset & vgg16 Face
+## 2. Training
+### 1) Preapre data
 + Download training data and training kerles from here: MSPL_TrainingData [Google Drive](https://drive.google.com/drive/folders/1ZE5EAgYxW-KE0EGPGQfU8KHAv6qHV8gy?usp=sharing)
 + Extract 'train_img.zip' and 'train_label_cls4.zip' into the same folder path you want to specify.
 ```Example
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 + VGGFace16 trained model [Google Drive](https://drive.google.com/file/d/1MGSQpN-wsUe1EzADWSa13R7Czf00Xmmn/view?usp=sharing)
 
 
-### Training
+### 2) Training
 + Specify the 'src/confgis/train_configs.py'.
 ```train_configs.py
 line 10: cfg.GPU_IDS = [0]
@@ -52,12 +52,7 @@ line 59: 'VGGFace16' = 'Path VGGFace16.pth"
 python train.py
 ```
 
-
-## Pre-trained Models
-+ Pretrained model: MSPL_GAN [Google Drive](https://drive.google.com/drive/folders/1W55HWWkv3PhexuRBa9xCVjdC6WWcc5al?usp=sharing)
-
-
-### Test
+## 3. Test
 + Specify the paths in 'src/inference.py'
 ```
 MODEL_DIR = 'Trained model path'
@@ -70,8 +65,11 @@ USE_GPU = 'True of False. When set True, the model will be tested on 'GPU(cuda)'
 python inference.py
 ```
 
+## 4. Pre-trained Models
++ Pretrained model: MSPL_GAN [Google Drive](https://drive.google.com/drive/folders/1W55HWWkv3PhexuRBa9xCVjdC6WWcc5al?usp=sharing)
 
-## MSPL_TestDatasets & Results
+
+## 5. MSPL_Testsets & Results
 + You can download here: MSPL_Testsets [Google Drive](https://drive.google.com/drive/folders/1522V-vcngc48PdIKNEee0jVb3uGKMVpd?usp=sharing)
 + Test Restuls of ours on MSPL_Testsets [Google Drive](https://drive.google.com/drive/folders/1mmK7qDhxOOehYCeTNMOTI0RhBj1HUDqx?usp=sharing)
 + Our model achieves the following performance on MSPL_Testsets :
@@ -89,17 +87,18 @@ python inference.py
 ![result3](/images/fig3.png)
 ![result4](/images/fig4.PNG)
 
-## Dataset Agreement
+
+## 6. Dataset Agreement
 + Our training and testset are synthesized using [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html), [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ), and [FFHQ](https://github.com/NVlabs/ffhq-dataset).
 + The dataset is available for non-commercial research purposes only.
 + You agree not to reproduce, duplicate, copy, sell, trade, resell or exploit for any commercial purposes, any portion of the images and any portion of derived data.
 + You agree not to further copy, publish or distribute any portion of the dataset. 
 
 
-## Related Datasets
+## 7. Related Datasets
 + CelebA (http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 + CelebAMask-HQ (https://github.com/switchablenorms/CelebAMask-HQ)
 + FFHQ (https://github.com/NVlabs/ffhq-dataset)
 
-## Citations
+## 8. Citations
 
