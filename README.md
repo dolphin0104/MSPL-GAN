@@ -23,9 +23,9 @@ pip install -r requirements.txt
 ```
 + Extract 'validationset.zip' to the folder path you want to specify (/path/to/valid_data).
 + Extract 'trainkernels.zip' to the folder path you want to specify (/path/to/kernel_data).
-+ VGGFace16 trained model (/path/to/vggface)
-VGGFace16 model weight is came from here: [Github](https://github.com/ustclby/Unsupervised-Domain-Specific-Deblurring)
-[Google Drive](https://drive.google.com/file/d/1MGSQpN-wsUe1EzADWSa13R7Czf00Xmmn/view?usp=sharing)
++ Extract 'VGGFace16.zip' to the folder path you want to specify (/path/to/vggface).
+    - VGGFace16 model weight is came from: [Github](https://github.com/ustclby/Unsupervised-Domain-Specific-Deblurring)
+    - [Google Drive](https://drive.google.com/file/d/1MGSQpN-wsUe1EzADWSa13R7Czf00Xmmn/view?usp=sharing)
 
 
 ### 2) Training
@@ -98,14 +98,12 @@ python inference.py
 + You agree not to further copy, publish or distribute any portion of the dataset. 
 
 
-## 7. Related Datasets
+## 7. License, Related works
 + [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 + [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ)
 + [FFHQ](https://github.com/NVlabs/ffhq-dataset)
 + [RealBlurrset]http://vllab.ucmerced.edu/wlai24/cvpr16_deblur_study/
-
-## 8.
-+ Codes for MTCNN, MobienetArcface and weights came from: [Link](https://github.com/TreB1eN/InsightFace_Pytorch)
++ Codes for MTCNN, MobienetArcface and weights came from: [HERE](https://github.com/TreB1eN/InsightFace_Pytorch)
 
 ## 8. Citations
 
