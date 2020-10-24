@@ -15,15 +15,17 @@ pip install -r requirements.txt
 + Download training data and training kerles from here: MSPL_TrainingData [Google Drive](https://drive.google.com/drive/folders/1ZE5EAgYxW-KE0EGPGQfU8KHAv6qHV8gy?usp=sharing)
 + Extract 'train_img.zip' and 'train_label_cls4.zip' into the same folder path you want to specify.
 ```Example
-- YOUR_TRAIN_DATA_PATH
+- /path/to/train_data (name is not important)
     -- train_img
         -- files..
     -- train_label_cls4
         -- files..
 ```
-+ Extract 'validationset.zip' to the folder path you want to specify.
-+ Extract 'trainkernels.zip' to the folder path you want to specify. 
-+ VGGFace16 trained model [Google Drive](https://drive.google.com/file/d/1MGSQpN-wsUe1EzADWSa13R7Czf00Xmmn/view?usp=sharing)
++ Extract 'validationset.zip' to the folder path you want to specify (/path/to/valid_data).
++ Extract 'trainkernels.zip' to the folder path you want to specify (/path/to/kernel_data).
++ VGGFace16 trained model (/path/to/vggface)
+VGGFace16 model weight is came from here: [Github](https://github.com/ustclby/Unsupervised-Domain-Specific-Deblurring)
+[Google Drive](https://drive.google.com/file/d/1MGSQpN-wsUe1EzADWSa13R7Czf00Xmmn/view?usp=sharing)
 
 
 ### 2) Training
@@ -36,18 +38,19 @@ line 10: cfg.GPU_IDS = [0]
     - To train with multiple GPUs, specify the the GPU device ids. 
         cfg.GPU_IDS = [1,2] => The model will be trained with two GPUs(device ids(1,2)).
 
-line 14: cfg.SAVE_DIR = '' 
-    - Save result folder path you want to specify. 
+line 14: cfg.SAVE_DIR = '/path/to/save' 
+    - path to save models, training process, etc. 
+    
 
 line 37, 41: 'data_dir'
-    - 'YOUR_TRAIN_DATA_PATH', 'YOUR_Validation_DATA_PATH' respectively.
+    - '/path/to/train_data', '/path/to/valid_data' respectively.
 
-line 48: cfg.TRAIN_KERNEL_PATH = 'YOUR_TrainKernel_DATA_PATH'
+line 48: cfg.TRAIN_KERNEL_PATH = '/path/to/kernel_data'
 
 line 59: 'VGGFace16' = 'Path VGGFace16.pth"
 ```
 
-+ To train the model(s) in the paper, run this command at 'src':
++ To train the model(s) in the paper, run this command in 'src':
 ```train
 python train.py
 ```
@@ -55,12 +58,12 @@ python train.py
 ## 3. Test
 + Specify the paths in 'src/inference.py'
 ```
-MODEL_DIR = 'Trained model path'
-INPUT_IMG_DIR = 'Test image path. Test all images in this path'
-OUTPUT_IMG_DIR = 'Save result path'
+MODEL_DIR = '/path/to/trained models/netG_last.pth'
+INPUT_IMG_DIR = '/path/to/test image'
+OUTPUT_IMG_DIR = '/path/to/save output image'
 USE_GPU = 'True of False. When set True, the model will be tested on 'GPU(cuda)' envirionment.'
 ```
-+ To inference the model, run this command:
++ To inference the model, run this command in 'src':
 ```inference
 python inference.py
 ```
@@ -96,9 +99,13 @@ python inference.py
 
 
 ## 7. Related Datasets
-+ CelebA (http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
-+ CelebAMask-HQ (https://github.com/switchablenorms/CelebAMask-HQ)
-+ FFHQ (https://github.com/NVlabs/ffhq-dataset)
++ [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
++ [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ)
++ [FFHQ](https://github.com/NVlabs/ffhq-dataset)
++ [RealBlurrset]http://vllab.ucmerced.edu/wlai24/cvpr16_deblur_study/
+
+## 8.
++ Codes for MTCNN, MobienetArcface and weights came from: [Link](https://github.com/TreB1eN/InsightFace_Pytorch)
 
 ## 8. Citations
 
