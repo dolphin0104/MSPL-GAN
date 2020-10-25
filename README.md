@@ -98,12 +98,15 @@ python inference.py
 + You agree not to further copy, publish or distribute any portion of the dataset. 
 
 
-## 7. License, Related works
+## 7. License, Acknowledgements
 + [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 + [CelebAMask-HQ](https://github.com/switchablenorms/CelebAMask-HQ)
 + [FFHQ](https://github.com/NVlabs/ffhq-dataset)
 + [RealBlurrset](http://vllab.ucmerced.edu/wlai24/cvpr16_deblur_study/)
 + Codes for MTCNN, MobienetArcface and weights came from: [HERE](https://github.com/TreB1eN/InsightFace_Pytorch)
++ Training & Testing kernels are synthesized using the method of,
+    Chakrabarti, Ayan. "A neural approach to blind motion deblurring." European conference on computer vision. Springer, Cham, 2016.
+
 
 ## 8. Citations
 
