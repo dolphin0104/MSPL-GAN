@@ -104,8 +104,8 @@ python inference.py
 + [FFHQ](https://github.com/NVlabs/ffhq-dataset)
 + [RealBlurrset](http://vllab.ucmerced.edu/wlai24/cvpr16_deblur_study/)
 + Codes for MTCNN, MobienetArcface and weights came from: [HERE](https://github.com/TreB1eN/InsightFace_Pytorch)
-+ Training & Testing kernels are synthesized using the method of,
-    Chakrabarti, Ayan. "A neural approach to blind motion deblurring." European conference on computer vision. Springer, Cham, 2016.
++ Training & Testing kernels are synthesized using the method of [1]
+    [1] Chakrabarti, Ayan. "A neural approach to blind motion deblurring." European conference on computer vision. Springer, Cham, 2016.
 
 
 ## 8. Citations
