@@ -25,7 +25,7 @@ pip install -r requirements.txt
 + Extract 'trainkernels.zip' to the folder path you want to specify (/path/to/kernel_data).
 + Extract 'VGGFace16.zip' to the folder path you want to specify (/path/to/vggface).
     - VGGFace16 model weight is came from: [Github](https://github.com/ustclby/Unsupervised-Domain-Specific-Deblurring)
-    - [Google Drive](https://drive.google.com/file/d/1MGSQpN-wsUe1EzADWSa13R7Czf00Xmmn/view?usp=sharing)
+    - or you can download it from here: [Google Drive](https://drive.google.com/file/d/1MGSQpN-wsUe1EzADWSa13R7Czf00Xmmn/view?usp=sharing)
 
 
 ### 2) Training
@@ -105,7 +105,7 @@ python inference.py
 + [RealBlurrset](http://vllab.ucmerced.edu/wlai24/cvpr16_deblur_study/)
 + Codes for MTCNN, MobienetArcface and weights came from: [HERE](https://github.com/TreB1eN/InsightFace_Pytorch)
 + Training & Testing kernels are synthesized using the method of,
-    + Chakrabarti, Ayan. "A neural approach to blind motion deblurring." European conference on computer vision. Springer, Cham, 2016.
+    - Chakrabarti, Ayan. "A neural approach to blind motion deblurring." European conference on computer vision. Springer, Cham, 2016.
 
 
 ## 8. Citations
