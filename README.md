@@ -111,7 +111,15 @@ python inference.py
     - Chakrabarti, Ayan. "A neural approach to blind motion deblurring." European conference on computer vision. Springer, Cham, 2016.
 
 
-## 8. Citations
+
+## 9. References
++ Xia, Zhihao, and Ayan Chakrabarti. "Training Image Estimators without Image Ground Truth." Advances in Neural Information Processing Systems. 2019.
++ Shen, Ziyi, et al. "Deep semantic face deblurring." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
++ Lu, Boyu, Jun-Cheng Chen, and Rama Chellappa. "Unsupervised domain-specific deblurring via disentangled representations." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2019.
++ Yasarla, Rajeev, Federico Perazzi, and Vishal M. Patel. "Deblurring face images using uncertainty guided multi-stream semantic networks." IEEE Transactions on Image Processing 29 (2020): 6251-6263.
+
+
+## 10. Citations
 ```
     @ARTICLE{9239928,
         author={T. B. {Lee} and S. H. {Jung} and Y. S. {Heo} and Y. S. {Heo}},
