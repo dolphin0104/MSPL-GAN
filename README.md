@@ -1,6 +1,9 @@
 # Progressive Semantic Face Deblurring
 
-This repository is the Official Pytorch Implementation of [Progressive Semantic Face Deblurring]. 
+This repository is the Official Pytorch Implementation of [Progressive Semantic Face Deblurring].
+```
+T. B. Lee, S. H. Jung, Y. S. Heo and Y. S. Heo, "Progressive Semantic Face Deblurring," in IEEE Access, doi: 10.1109/ACCESS.2020.3033890.
+```
 
 ![MSPL_GAN](/images/mspl_gan.png)
 
@@ -109,4 +112,15 @@ python inference.py
 
 
 ## 8. Citations
-
+```
+    @ARTICLE{9239928,
+        author={T. B. {Lee} and S. H. {Jung} and Y. S. {Heo} and Y. S. {Heo}},
+        journal={IEEE Access}, 
+        title={Progressive Semantic Face Deblurring}, 
+        year={2020},
+        volume={},
+        number={},
+        pages={1-1},
+        doi={10.1109/ACCESS.2020.3033890}
+        }
+```
