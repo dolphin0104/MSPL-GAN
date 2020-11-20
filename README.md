@@ -7,11 +7,12 @@ Lee, Tae Bok, Soo Hyun Jung, and Yong Seok Heo. "Progressive Semantic Face Deblu
 
 ![MSPL_GAN](/images/mspl_gan.png)
 
-## 1. Requirements
-To install requirements:
-```setup
-pip install -r requirements.txt
-```
+## 1. Dependencies
+Python >= 3.5
+Pytorch >= 1.2.0
+
+
+
 
 ## 2. Training
 ### 1) Preapre data
