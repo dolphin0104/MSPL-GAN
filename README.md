@@ -1,6 +1,6 @@
 # Progressive Semantic Face Deblurring
 
-This repository is the Official Pytorch Implementation of [Progressive Semantic Face Deblurring].
+This repository is the Official Pytorch Implementation of [Progressive Semantic Face Deblurring](https://ieeexplore.ieee.org/abstract/document/9239928).
 ```
 Lee, Tae Bok, Soo Hyun Jung, and Yong Seok Heo. "Progressive Semantic Face Deblurring." IEEE Access (2020).
 ```
@@ -8,10 +8,8 @@ Lee, Tae Bok, Soo Hyun Jung, and Yong Seok Heo. "Progressive Semantic Face Deblu
 ![MSPL_GAN](/images/mspl_gan.png)
 
 ## 1. Dependencies
-Python >= 3.5
-Pytorch >= 1.2.0
-
-
++ Python >= 3.5
++ Pytorch >= 1.2.0
 
 
 ## 2. Training
