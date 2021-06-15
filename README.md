@@ -70,10 +70,6 @@ USE_GPU = 'True of False. When set True, the model will be tested on 'GPU(cuda)'
 python inference.py
 ```
 
-## 4. Pre-trained Models
-+ Pretrained model: MSPL_GAN [Google Drive](https://drive.google.com/drive/folders/1W55HWWkv3PhexuRBa9xCVjdC6WWcc5al?usp=sharing)
-
-
 ## 5. MSPL_Testsets & Results
 + You can download here: MSPL_Testsets [Google Drive](https://drive.google.com/drive/folders/1522V-vcngc48PdIKNEee0jVb3uGKMVpd?usp=sharing)
 + Test Restuls of ours on MSPL_Testsets [Google Drive](https://drive.google.com/drive/folders/1mmK7qDhxOOehYCeTNMOTI0RhBj1HUDqx?usp=sharing)
