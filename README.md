@@ -13,7 +13,7 @@ T. B. Lee, S. H. Jung and Y. S. Heo, "Progressive Semantic Face Deblurring," in 
 
 
 ## 2. Training
-### 1) Preapre data
+### 1) Prepre data
 + Download training data and training kerles from here: MSPL_TrainingData [Google Drive](https://drive.google.com/drive/folders/1ZE5EAgYxW-KE0EGPGQfU8KHAv6qHV8gy?usp=sharing)
 + Extract 'train_img.zip' and 'train_label_cls4.zip' into the same folder path you want to specify.
 ```Example
