@@ -27,9 +27,7 @@ T. B. Lee, S. H. Jung and Y. S. Heo, "Progressive Semantic Face Deblurring," in 
 + Extract 'trainkernels.zip' to the folder path you want to specify (/path/to/kernel_data).
 + Extract 'VGGFace16.zip' to the folder path you want to specify (/path/to/vggface).
     - VGGFace16 model weight is came from: [Github](https://github.com/ustclby/Unsupervised-Domain-Specific-Deblurring)
-    - or you can download it from here: [Google Drive](https://drive.google.com/file/d/1MGSQpN-wsUe1EzADWSa13R7Czf00Xmmn/view?usp=sharing)
-
-
+    
 ### 2) Training
 + Specify the 'src/confgis/train_configs.py'.
 ```train_configs.py
