@@ -14,7 +14,7 @@ T. B. Lee, S. H. Jung and Y. S. Heo, "Progressive Semantic Face Deblurring," in 
 
 ## 2. Training
 ### 1) Prepare data
-+ Download training data and training kerles from here: MSPL_TrainingData [Google Drive](https://drive.google.com/drive/folders/1ZE5EAgYxW-KE0EGPGQfU8KHAv6qHV8gy?usp=sharing)
++ Download training data and training kerles from here: MSPL_TrainingData [Google Drive](https://drive.google.com/drive/u/0/folders/1-znyRDpfLZnRzstmhhHYPU55W5uKhPUt)
 + Extract 'train_img.zip' and 'train_label_cls4.zip' into the same folder path you want to specify.
 ```Example
 - /path/to/train_data (name is not important)
@@ -69,13 +69,12 @@ python inference.py
 ```
 
 ## 4. Pre-trained Models
-+ Pretrained model: MSPL_GAN [Google Drive](https://drive.google.com/drive/folders/1W55HWWkv3PhexuRBa9xCVjdC6WWcc5al?usp=sharing)
++ Pretrained model: MSPL_GAN [Google Drive](https://drive.google.com/drive/u/0/folders/19ElE5TqqzeVFZAr-o3XXMMOJwlN2J5Q7)
 
 
 ## 5. MSPL_Testsets & Results
-+ You can download here: MSPL_Testsets [Google Drive](https://drive.google.com/drive/folders/1522V-vcngc48PdIKNEee0jVb3uGKMVpd?usp=sharing)
 + You can download here: MSPL_Testsets [Google Drive](https://drive.google.com/drive/u/0/folders/18WUd6wT-YEthNSeJL_F4RQQR0Av750b8)
-+ Test Restuls of ours on MSPL_Testsets [Google Drive](https://drive.google.com/drive/folders/1mmK7qDhxOOehYCeTNMOTI0RhBj1HUDqx?usp=sharing)
++ Test Restuls of ours on MSPL_Testsets [Google Drive](https://drive.google.com/drive/u/0/folders/1NRFOP7R0BPckIhyoRRdYKK4wvF65iphW)
 + Our model achieves the following performance on MSPL_Testsets :
 + PSNR and SSIM values are measured using MATLAB.
 
